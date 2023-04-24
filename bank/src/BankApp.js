@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TransactionTable from "./TransactionTable";
 import TransactionForm from "./TransactionForm";
+import "./App.css";
 
 function BankApp() {
   const [transactions, setTransactions] = useState([]);

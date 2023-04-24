@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import BankApp from './BankApp';
 
-ReactDOM.render(
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <BankApp />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
-
 
